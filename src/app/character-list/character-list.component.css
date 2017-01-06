@@ -1,0 +1,12 @@
+.container {
+  max-width: 450px;
+}
+
+.row:not(:last-of-type) {
+  border-bottom: 1px solid #eaeceb;
+}
+
+.row:hover {
+  background: white;
+  cursor: pointer;
+}
