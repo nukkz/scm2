@@ -1,0 +1,26 @@
+<div *ngIf="character">
+  <sidebar [id]="character.id"></sidebar>
+  <main>
+    <div>
+      <h1>{{character.name}}</h1>
+      <p>Rasse: {{character.race}}</p>
+      <p>Geschlecht: {{character.gender}}</p>
+      <p>Kultur: {{character.culture}}</p>
+      <p>Abstammung: {{character.descent}}</p>
+      <p>Ausbildung: {{character.apprenticeship}}</p>
+      <p>Variante: {{character.variant}}</p>
+      <p>Mondzeichen: {{character.moonSign}}</p>
+      <p>Haarfarbe: {{character.hairColor}}</p>
+      <p>Augenfarbe: {{character.eyeColor}}</p>
+      <p>Hautfarbe: {{character.skinColor}}</p>
+      <p>Größe: {{character.height}}</p>
+      <p>Gewicht: {{character.weight}}</p>
+      <p>Geburtsort: {{character.birthplace}}</p>
+      <p>Aussehen: {{character.appearance}}</p>
+      <p>Heldengrad: {{character.level}}</p>
+      <div *ngFor="let attribute of character.attributes">
+        <label>{{attribute.short}}: {{attribute.value}}</label>
+      </div>
+    </div>
+  </main>
+</div>

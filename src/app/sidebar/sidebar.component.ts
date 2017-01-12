@@ -1,5 +1,6 @@
-import {Component, Injectable, Directive} from '@angular/core';
+import {Component, Injectable, Directive, OnInit, Input} from '@angular/core';
 import {Character} from "../character/Character";
+import {ActivatedRoute, Params} from "@angular/router";
 
 @Component({
   selector: 'sidebar',
@@ -8,7 +9,9 @@ import {Character} from "../character/Character";
 })
 
 export class SidebarComponent {
-  character : Character;
+  @Input() id : number;
 
-  constructor() {}
+  constructor(){}
+
+
 }

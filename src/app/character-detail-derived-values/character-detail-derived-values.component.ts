@@ -8,12 +8,12 @@ import {Location} from "@angular/common";
 import {SidebarComponent} from "../sidebar/sidebar.component";
 
 @Component({
-  selector: 'about',
-  templateUrl: './character-detail.component.html',
-  styleUrls: ['./character-detail.component.css'],
+  selector: 'character-detail-derived-values',
+  templateUrl: './character-detail-derived-values.component.html',
+  styleUrls: ['./character-detail-derived-values.component.css'],
 })
 
-export class CharacterDetailComponent implements OnInit {
+export class CharacterDetailDerivedValuesComponent implements OnInit {
   character: Character;
   id: number;
 

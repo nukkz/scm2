@@ -1,0 +1,10 @@
+<div *ngIf="character">
+  <sidebar [id]="character.id"></sidebar>
+  <main>
+    <div *ngFor="let derivedValue of character.derivedValues">
+      <label>{{derivedValue.name}}: {{derivedValue.value}}</label>
+    </div>
+  </main>
+</div>
+
+
